@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(248, 248, 248);
+  color: rgb(7, 7, 7);
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(7, 7, 7);
+}
+.logo:hover {
+  background: linear-gradient(90deg, hsl(217deg, 100%, 50%) 0%, hsl(186deg, 100%, 69%) 100%);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.join {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background: linear-gradient(90deg, hsl(217deg, 100%, 50%) 0%, hsl(186deg, 100%, 69%) 100%);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+.join:hover {
+  background: hsl(217deg, 100%, 50%);
+}
+
+.home {
+  max-width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .home__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+.home .home__content > p {
+  font-size: 2rem;
+  opacity: 90%;
+}
+.home .home__content > .join {
+  margin-top: 2.5rem;
+}
+.home .home__img {
+  flex: 1;
+  max-height: 90vh;
+}
+
+.courses {
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  margin-top: 5rem;
+}
+.courses > .courses__card {
+  width: 24rem;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.courses > .courses__card .symbol {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  top: -5%;
+  border-radius: 10px;
+  background: hsl(217deg, 100%, 50%);
+}
+.courses > .courses__card h3 {
+  margin-top: 3rem;
+}
+.courses > .courses__card p {
+  font-size: 1.4rem;
+  opacity: 90%;
+}
+.courses .card1 {
+  background: hsl(217deg, 100%, 50%);
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+footer {
+  max-width: 90%;
+  margin: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px -25px 20px -20px;
+}
+
+@media (min-width: 1200px) {
+  .home {
+    min-height: 60vh;
+  }
+
+  .courses {
+    min-height: 40vh;
+  }
+}
+@media (max-width: 1200px) {
+  .home {
+    min-height: 50vh;
+  }
+
+  .courses {
+    min-height: 40vh;
+    margin-top: 3rem;
+  }
+  .courses .courses__card {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .home .home__content {
+    margin-block: 5vh;
+  }
+}
+@media (max-width: 768px) {
+  nav, footer {
+    height: 7vh;
+  }
+
+  .courses .courses__card {
+    width: 21rem;
+    height: 23rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 47%;
+  }
+
+  .home .home__img {
+    height: 40vh;
+  }
+}/*# sourceMappingURL=style.css.map */
